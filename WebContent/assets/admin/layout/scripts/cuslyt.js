@@ -338,6 +338,270 @@ var CusLyt = function() {
         });
     };
 
+    var setMenuLayout = function() {
+    	if($(".contentDiv")){
+    		$(".contentDiv").hide();
+    	}
+    	
+    	if($(".maintainDiv")){
+    		$(".maintainDiv").hide();
+    	}
+    	
+    	if($(".dataDiv")){
+    		$(".dataDiv").hide();
+    	}
+    	
+    	if($(".configDiv")){
+    		$(".configDiv").hide();
+    	}
+    	
+    	if($(".userDiv")){
+    		$(".userDiv").hide();
+    	}
+    	
+    	if($(".expandDiv")){
+    		$(".expandDiv").hide();
+    	}
+    	
+    	$("#workBenchMenu").click( function () {  
+    		$("#workBenchMenu").parent("li").addClass("active");
+    		$(".workBenchDiv").show();
+    		if($(".contentDiv")){
+    			$(".contentDiv").hide();
+    			$("#contentMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".maintainDiv")){
+    			$(".maintainDiv").hide();
+    			$("#maintainMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".dataDiv")){
+    			$(".dataDiv").hide();
+    			$("#dataMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".configDiv")){
+    			$(".configDiv").hide();
+    			$("#configMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".userDiv")){
+    			$(".userDiv").hide();
+    			$("#userMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".expandDiv")){
+    			$(".expandDiv").hide();
+    			$("#expandMenu").parent("li").removeClass("active");
+    		}
+    	});
+    	$("#contentMenu").click( function () {  
+    		$("#contentMenu").parent("li").addClass("active");
+    		$(".contentDiv").show();
+    		if($(".workBenchDiv")){
+    			$(".workBenchDiv").hide();
+    			$("#workBenchMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".maintainDiv")){
+    			$(".maintainDiv").hide();
+    			$("#maintainMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".dataDiv")){
+    			$(".dataDiv").hide();
+    			$("#dataMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".configDiv")){
+    			$(".configDiv").hide();
+    			$("#configMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".userDiv")){
+    			$(".userDiv").hide();
+    			$("#userMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".expandDiv")){
+    			$(".expandDiv").hide();
+    			$("#expandMenu").parent("li").removeClass("active");
+    		}
+    	});
+    	
+    	$("#maintainMenu").click( function () {  
+    		$("#maintainMenu").parent("li").addClass("active");
+    		$(".maintainDiv").show();
+    		if($(".workBenchDiv")){
+    			$(".workBenchDiv").hide();
+    			$("#workBenchMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".contentDiv")){
+    			$(".contentDiv").hide();
+    			$("#contentMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".dataDiv")){
+    			$(".dataDiv").hide();
+    			$("#dataMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".configDiv")){
+    			$(".configDiv").hide();
+    			$("#configMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".userDiv")){
+    			$(".userDiv").hide();
+    			$("#userMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".expandDiv")){
+    			$(".expandDiv").hide();
+    			$("#expandMenu").parent("li").removeClass("active");
+    		}
+    	});
+    	
+    	$("#dataMenu").click( function () {  
+    		$("#dataMenu").parent("li").addClass("active");
+    		$(".dataDiv").show();
+    		if($(".workBenchDiv")){
+    			$(".workBenchDiv").hide();
+    			$("#workBenchMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".contentDiv")){
+    			$(".contentDiv").hide();
+    			$("#contentMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".maintainDiv")){
+    			$(".maintainDiv").hide();
+    			$("#maintainMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".configDiv")){
+    			$(".configDiv").hide();
+    			$("#configMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".userDiv")){
+    			$(".userDiv").hide();
+    			$("#userMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".expandDiv")){
+    			$(".expandDiv").hide();
+    			$("#expandMenu").parent("li").removeClass("active");
+    		}
+    	});
+    	
+    	$("#configMenu").click( function () {  
+    		$("#configMenu").parent("li").addClass("active");
+    		$(".configDiv").show();
+    		if($(".workBenchDiv")){
+    			$(".workBenchDiv").hide();
+    			$("#workBenchMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".contentDiv")){
+    			$(".contentDiv").hide();
+    			$("#contentMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".maintainDiv")){
+    			$(".maintainDiv").hide();
+    			$("#maintainMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".dataDiv")){
+    			$(".dataDiv").hide();
+    			$("#dataMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".userDiv")){
+    			$(".userDiv").hide();
+    			$("#userMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".expandDiv")){
+    			$(".expandDiv").hide();
+    			$("#expandMenu").parent("li").removeClass("active");
+    		}
+    	});
+    	
+    	$("#userMenu").click( function () {  
+    		$("#userMenu").parent("li").addClass("active");
+    		$(".userDiv").show();
+    		if($(".workBenchDiv")){
+    			$(".workBenchDiv").hide();
+    			$("#workBenchMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".contentDiv")){
+    			$(".contentDiv").hide();
+    			$("#contentMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".maintainDiv")){
+    			$(".maintainDiv").hide();
+    			$("#maintainMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".dataDiv")){
+    			$(".dataDiv").hide();
+    			$("#dataMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".configDiv")){
+    			$(".configDiv").hide();
+    			$("#configMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".expandDiv")){
+    			$(".expandDiv").hide();
+    			$("#expandMenu").parent("li").removeClass("active");
+    		}
+    	});
+    	
+    	$("#expandMenu").click( function () {  
+    		$("#expandMenu").parent("li").addClass("active");
+    		$(".expandDiv").show();
+    		if($(".workBenchDiv")){
+    			$(".workBenchDiv").hide();
+    			$("#workBenchMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".contentDiv")){
+    			$(".contentDiv").hide();
+    			$("#contentMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".maintainDiv")){
+    			$(".maintainDiv").hide();
+    			$("#maintainMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".dataDiv")){
+    			$(".dataDiv").hide();
+    			$("#dataMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".configDiv")){
+    			$(".configDiv").hide();
+    			$("#configMenu").parent("li").removeClass("active");
+    		}
+    		
+    		if($(".userDiv")){
+    			$(".userDiv").hide();
+    			$("#userMenu").parent("li").removeClass("active");
+    		}
+    	});
+    	
+    };
+    
     return {
 
         //main function to initiate the theme
@@ -345,6 +609,7 @@ var CusLyt = function() {
             // handles style customer tool
             handleTheme(); 
             handleFullScreenMode();
+            setMenuLayout();
             
             // handle layout style change
             $('.theme-panel .layout-style-option').change(function() {
